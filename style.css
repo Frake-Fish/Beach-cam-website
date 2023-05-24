@@ -1,4 +1,15 @@
 
+
+.vlieland-size {
+    height: auto;
+    width: 100%;
+}
+
+.size-video {
+    width: 100%;
+    height: auto;
+}
+
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
@@ -10,3 +21,36 @@ h1 {
 body {
     background-color: black;
 }
+
+.iframeContainer {
+    position: relative;
+    max-width: 1167px;
+    height: 656px;
+    overflow: hidden;
+}
+
+.iframeContent {
+    position: absolute;
+    top: -286px;
+    left: -168px;
+    width: 1500px;
+    height: 2000px;
+}
+
+@media (max-width: 767px) {
+    /* Media query for screens up to 767px wide (typically mobile phones) */
+    .iframeContainer {
+        position: relative;
+        max-width: 1167px;
+        height: 224px;
+        overflow: hidden;
+    }
+    
+    .iframeContent {
+        position: absolute;
+        top: -602px;
+        left: -552px;
+        width: 986px;
+        height: 1914px;
+    }
+  }
