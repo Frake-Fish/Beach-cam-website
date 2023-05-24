@@ -14,12 +14,12 @@
 <body>
     <h1>Vlieland</h1>
     <div class="size-video">
-      <iframe src="https://www.youtube.com/embed/34tOlrk7z4M" width="100%" frameborder="0" allowfullscreen="true" height="220"></iframe>
+      <iframe src="https://www.youtube.com/embed/34tOlrk7z4M" width="100%" frameborder="0" allowfullscreen="true" height="220" class="size-iframe"></iframe>
     </div>
 
     <h1>Texel hotel Noordzee</h1>
     <div class="size-video">
-      <iframe src="https://webcams-texel.nl/strandhotelTX/" width="100%" frameborder="0" allowfullscreen="true" height="220"></iframe>
+      <iframe src="https://webcams-texel.nl/strandhotelTX" width="100%" frameborder="0" allowfullscreen="true" height="220" class="size-iframe"></iframe>
     </div>
 
     <!-- het texel frame -->
@@ -31,39 +31,44 @@
 
     <h1>Texel paal 9</h1>
     <div class="size-video">
-        <iframe src="https://webcam-denhelder.nl/nwiedus-zuid/" width="100%" frameborder="0" allowfullscreen="true" height="220"></iframe>
+        <iframe src="https://webcam-denhelder.nl/nwiedus-zuid/" width="100%" frameborder="0" allowfullscreen="true" height="220" class="size-iframe"></iframe>
     </div>
 
     <h1>Nogal Wiedus Noord</h1>
     <div class="size-video">
-      <iframe src="https://webcam-denhelder.nl/nwiedus-noord/" width="100%" frameborder="0" allowfullscreen="true" height="220"></iframe>
+      <iframe src="https://webcam-denhelder.nl/nwiedus-noord/" width="100%" frameborder="0" allowfullscreen="true" height="220" class="size-iframe"></iframe>
     </div>
 
     <h1>Nogal Wiedus Zuid</h1>
     <div class="size-video">
-      <iframe src="https://webcam-denhelder.nl/nwiedus-zuid/" width="100%" frameborder="0" allowfullscreen="true" height="220"></iframe>
+      <iframe src="https://webcam-denhelder.nl/nwiedus-zuid/" width="100%" frameborder="0" allowfullscreen="true" height="220" class="size-iframe"></iframe>
     </div>
 
     <h1>Strandpaviljoen Callantsoog</h1>
     <div class="size-video">
-      <iframe src="https://g0.ipcamlive.com/player/player.php?alias=detokowebcam&amp;skin=white&amp;autoplay=1" width="100%" frameborder="0" allowfullscreen="true" height="220"></iframe>
+      <iframe src="https://g0.ipcamlive.com/player/player.php?alias=detokowebcam&amp;skin=white&amp;autoplay=1" width="100%" frameborder="0" allowfullscreen="true" height="220" class="size-iframe"></iframe>
     </div>
 
     <h1>Petten</h1>
     <div class="size-video">
-      <iframe src="https://www.youtube.com/embed/o9eoZM63DV4" width="100%" frameborder="0" allowfullscreen="true" height="220"></iframe>
+      <iframe src="https://www.youtube.com/embed/o9eoZM63DV4" width="100%" frameborder="0" allowfullscreen="true" height="220" class="size-iframe"></iframe>
     </div>
 
     <h1>Bergen aan Zee</h1>
     <div class="size-video">
-      <iframe src="https://www.youtube.com/embed/Z2SiE-MSfVY" width="100%" frameborder="0" allowfullscreen="true" height="220"></iframe>
+      <iframe src="https://www.youtube.com/embed/Z2SiE-MSfVY" width="100%" frameborder="0" allowfullscreen="true" height="220" class="size-iframe"></iframe>
     </div>
 
     <h1>Egmond</h1>
     <div class="size-video">
-      <iframe src="https://www.youtube.com/embed/L2obWMdThDg" width="100%" frameborder="0" allowfullscreen="true" height="220"></iframe>
+      <iframe src="https://www.youtube.com/embed/L2obWMdThDg" width="100%" frameborder="0" allowfullscreen="true" height="220" class="size-iframe"></iframe>
     </div>
-
+    <script>
+        window.onload = function() {
+          var video = document.querySelector('iframe');
+          video.src = video.src.replace('?autoplay=1', '?autoplay=0');
+        };
+      </script>
 
 </body>
 </html>

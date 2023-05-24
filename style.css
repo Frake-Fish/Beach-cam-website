@@ -54,3 +54,10 @@ body {
         height: 1914px;
     }
   }
+
+  @media (min-width: 768px) {
+    .size-iframe {
+        width: 100%;
+        height: 820px;
+    }
+  }
